@@ -21,9 +21,9 @@ class Granja {
     method alimentarAnimales(cantidadAlimento) {
         return obtenerAnimalesHambre()
             .forEach({ animal => 
-                animal.comer(cantidadAlimento)
+                animal.comer(cantidadAlimento) .size()
             })
-            .size()
+            
     }
 
     method obtenerAnimalesSinVacunar() {
